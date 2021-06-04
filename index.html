@@ -21,9 +21,9 @@
           <form id='userInfoInput'>
             <p>
               <label for="fullName">Full Name:</label>
-              <input id='fullName' class='form' type="text">
+              <input id='fullName' class='form' type="text" required>
               <label for="email">Email:</label>
-              <input id='email' class='form' type="text">
+              <input id='email' class='form' type="text" required>
             </p>
             <button class='btn btn-warning'type='submit'>Go!</button>
           </form>
@@ -31,6 +31,95 @@
         <!-- closing div for userInfo -->
       </div>
       <!-- closing div for intro -->
+
+      <!-- begin form for survey -->
+      <form id='survey'>
+        <!-- begin first question -->
+        <div class='firstQuestion'>
+          <p class='question'>
+            1. What is your favorite color?
+          </p>
+          <!-- begin first set of answers -->
+          <div class="radio">
+            <label>
+              <input type="radio" name="color" value="chocolate" checked>
+              Chocolate
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="color" value="vanilla">
+              Vanilla
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="color" value="cookiesandcream">
+              Cookies & Cream
+            </label>
+          </div>
+          <button id='firstBack' class='btn btn-dark'>back!</button>
+          <button id='firstSubmit' class='btn btn-dark'>Next!</button>
+        </div>
+        <!-- end div for firstQuestion -->
+
+        <!-- begin second question -->
+        <div class='secondQuestion'>
+          <p class='question'>
+            1. What is your favorite flavor?
+          </p>
+          <!-- begin second set of answers -->
+          <div class="radio">
+            <label>
+              <input type="radio" name="flavor" value="chocolate" checked>
+              Chocolate
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="flavor" value="vanilla">
+              Vanilla
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="flavor" value="cookiesandcream">
+              Cookies & Cream
+            </label>
+          </div>
+          <button id='secondSubmit' class='btn btn-dark'>Next!</button>
+        </div>
+        <!-- end div for secondQuestion -->
+
+        <!-- begin third question -->
+        <div class='thirdQuestion'>
+          <p class='question'>
+            1. What is your favorite flower?
+          </p>
+          <!-- begin second set of answers -->
+          <div class="radio">
+            <label>
+              <input type="radio" name="flower" value="chocolate" checked>
+              Chocolate
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="flower" value="vanilla">
+              Vanilla
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="flower" value="cookiesandcream">
+              Cookies & Cream
+            </label>
+          </div>
+          <button id='thirdSubmit' class='btn btn-dark'>Next!</button>
+        </div>
+                <!-- end div for secondQuestion -->
+      </form>
+
     </div>
     <!-- closing div for content -->
   </div>
