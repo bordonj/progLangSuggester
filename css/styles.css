@@ -1,13 +1,42 @@
 /* layout */
-.content {
-  height: 50vh;
-}
-.index-footer {
-  background-color: rgb(47, 58, 67);
+.top {
+  background-color: black;
   color: white;
-  padding: 25px;
-  padding-bottom:10px;
+  height: 20vh;
+  text-align: center;
+  padding-top: 5vh;
 }
+.top h1{
+  font-size: 10vh;
+  text-shadow: 2px 4px teal;
+}
+.main {
+  height: 80vh;
+  padding: 0 3vw;
+  background-color: black;
+  color: white;
+}
+html, body {
+  height: 100%;
+}
+
+.content {
+  background-color: teal;
+  height: 100%;
+  padding: 1% 2%;
+}
+
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  background-color: black;
+  height: 5vh;
+  color: white;
+  text-align: center;
+  padding-top:1vh;
+}
+
 /* text styles */
 
 /* media */
