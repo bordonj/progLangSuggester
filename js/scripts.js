@@ -77,29 +77,37 @@ $(document).ready(function() {
     const firstScore = $('input:radio[name=first]:checked').val();
     const secondScore = $('input:radio[name=second]:checked').val();
     const thirdScore = $('input:radio[name=third]:checked').val();
+    const fourthScore = $('input:radio[name=fourth]:checked').val();
+    const fifthScore = $('input:radio[name=fifth]:checked').val();
     tally(firstScore);
     tally(secondScore);
     tally(thirdScore);
+    tally(fourthScore);
+    tally(fifthScore);
     $('.userName').text(userName);
     $('.userEmail').text(userEmail);
 
 
     if (js > cs && js > ruby) {
+      $('.fifthQuestion').hide();
       $('#cs, #ruby, #survey').hide();
       $('#results').show();
       $('#js').fadeIn();
     } else if (cs > js && cs > ruby) {
+      $('.fifthQuestion').hide();
       $('#js, #ruby, #survey').hide();
       $('#results').show();
       $('#cs').fadeIn();
     } else if (ruby > cs && ruby > js) {
+      $('.fifthQuestion').hide();
       $('#cs, #js, #survey').hide();
       $('#results').show();
       $('#ruby').fadeIn();
     } else {
+      $('.fifthQuestion').hide();
       $('#cs, #js, #ruby, #survey').hide();
       $('#results').show();
-      $('#all').fadeIn();
+      $('#any').fadeIn();
     }
   })
 })
