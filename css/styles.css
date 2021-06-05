@@ -17,7 +17,6 @@ html, body {
   padding: 0 3vw;
   background-color: rgb(44, 68, 67);
   color: rgb(255, 255, 255);
-  overflow: auto;
 }
 .content {
   background-color: teal;
@@ -81,9 +80,31 @@ button {
   margin-bottom: 5px;
 }
 
+#results p {
+  color:thistle;
+  text-shadow: 2px 2px black;
+}
+
+.redo {
+  color: black;
+  margin-top: 5vh;
+}
+
+.lang {
+  font-weight: bold;
+  color:rgb(145, 237, 237);
+  text-shadow: 3px 3px black;
+}
+
 /* media */
 .btn-dark {
   margin-top: 0px;
+}
+img {
+  float: left;
+  width: 40%;
+  border: 1px solid black;
+  border-radius: 3vw;
 }
 
 /* jQuery Survey*/
@@ -96,6 +117,7 @@ button {
   margin: auto;
   background-color: rgb(112, 112, 112);
   margin-top: 5vh;
+  margin-bottom: 5vh;
   box-shadow: 2px 5px rgb(0, 0, 0);
   border-radius: 5px;
   border-top: 2px solid white;
