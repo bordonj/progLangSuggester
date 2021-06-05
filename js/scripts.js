@@ -72,7 +72,7 @@ $(document).ready(function() {
     $('.fifthQuestion').hide();
     $('.fourthQuestion').fadeIn();
   })
-  $('#fifthSubmit').click(function(e5) {
+  $('form#survey').submit(function(e5) {
     e5.preventDefault();
     const firstScore = $('input:radio[name=first]:checked').val();
     const secondScore = $('input:radio[name=second]:checked').val();
@@ -85,21 +85,21 @@ $(document).ready(function() {
 
 
     if (js > cs && js > ruby) {
-      $('.thirdQuestion').hide();
       $('#cs, #ruby, #survey').hide();
       $('#results').show();
       $('#js').fadeIn();
     } else if (cs > js && cs > ruby) {
-      $('.thirdQuestion').hide();
       $('#js, #ruby, #survey').hide();
       $('#results').show();
       $('#cs').fadeIn();
     } else if (ruby > cs && ruby > js) {
-      $('.thirdQuestion').hide();
       $('#cs, #js, #survey').hide();
       $('#results').show();
       $('#ruby').fadeIn();
+    } else {
+      $('#cs, #js, #ruby, #survey').hide();
+      $('#results').show();
+      $('#all').fadeIn();
     }
-
   })
 })

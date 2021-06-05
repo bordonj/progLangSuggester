@@ -122,7 +122,7 @@ img {
 }
 
 /* jQuery Survey*/
-#survey, .firstQuestion, .secondQuestion, .thirdQuestion, .fourthQuestion, .fifthQuestion, #results, #js, #ruby, #cs {
+#survey, .firstQuestion, .secondQuestion, .thirdQuestion, .fourthQuestion, .fifthQuestion, #results, #js, #ruby, #cs, #any {
   display: none;
 }
 
