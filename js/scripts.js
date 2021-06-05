@@ -15,8 +15,13 @@ function tally(points) {
 
 //ui logic
 $(document).ready(function() {
+  let userName;
+  let userEmail;
   $('form#userInfoInput').submit(function(e1) {
     e1.preventDefault();
+    userName = $('input#fullName').val();
+    userEmail = $('input#email').val();
+
     $('.intro').hide();
     $('#survey').show();
     $('.firstQuestion').fadeIn();
@@ -75,6 +80,9 @@ $(document).ready(function() {
     tally(firstScore);
     tally(secondScore);
     tally(thirdScore);
+    $('.userName').text(userName);
+    $('.userEmail').text(userEmail);
+
 
     if (js > cs && js > ruby) {
       $('.thirdQuestion').hide();
@@ -93,9 +101,5 @@ $(document).ready(function() {
       $('#ruby').fadeIn();
     }
 
-
-
-    // $('#survey').hide();
-    // $('.intro').fadeIn();
   })
 })

@@ -95,7 +95,17 @@ button {
   color:rgb(145, 237, 237);
   text-shadow: 3px 3px black;
 }
+
 h1 {
+  font-weight: bold;
+}
+
+.userEmail {
+  color: white;
+}
+
+.userName {
+  color: thistle;
   font-weight: bold;
 }
 
