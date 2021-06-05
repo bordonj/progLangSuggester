@@ -95,6 +95,9 @@ button {
   color:rgb(145, 237, 237);
   text-shadow: 3px 3px black;
 }
+h1 {
+  font-weight: bold;
+}
 
 /* media */
 .btn-dark {
@@ -105,10 +108,11 @@ img {
   width: 40%;
   border: 1px solid black;
   border-radius: 3vw;
+  margin-right: 1vw;
 }
 
 /* jQuery Survey*/
-#survey, .firstQuestion, .secondQuestion, .thirdQuestion, #results, #js, #ruby, #cs {
+#survey, .firstQuestion, .secondQuestion, .thirdQuestion, .fourthQuestion, .fifthQuestion, #results, #js, #ruby, #cs {
   display: none;
 }
 

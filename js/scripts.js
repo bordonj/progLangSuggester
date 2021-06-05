@@ -42,12 +42,32 @@ $(document).ready(function() {
     $('.secondQuestion').hide();
     $('.thirdQuestion').fadeIn();
   })
-  $('#thirdBack').click(function(e4) {
-    e4.preventDefault();
+  $('#thirdBack').click(function(e2) {
+    e2.preventDefault();
     $('.thirdQuestion').hide();
     $('.secondQuestion').fadeIn();
   })
-  $('#thirdSubmit').click(function(e5) {
+  $('#thirdSubmit').click(function(e3) {
+    e3.preventDefault();
+    $('.thirdQuestion').hide();
+    $('.fourthQuestion').fadeIn();
+  })
+  $('#fourthBack').click(function(e2) {
+    e2.preventDefault();
+    $('.fourthQuestion').hide();
+    $('.thirdQuestion').fadeIn();
+  })
+  $('#fourthSubmit').click(function(e3) {
+    e3.preventDefault();
+    $('.fourthQuestion').hide();
+    $('.fifthQuestion').fadeIn();
+  })
+  $('#fifthBack').click(function(e4) {
+    e4.preventDefault();
+    $('.fifthQuestion').hide();
+    $('.fourthQuestion').fadeIn();
+  })
+  $('#fifthSubmit').click(function(e5) {
     e5.preventDefault();
     const firstScore = $('input:radio[name=first]:checked').val();
     const secondScore = $('input:radio[name=second]:checked').val();
