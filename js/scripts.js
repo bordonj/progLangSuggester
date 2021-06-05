@@ -1,4 +1,17 @@
 //business logic
+let js = 0;
+let cs = 0;
+let ruby = 0;
+
+function tally(points) {
+  if (points === 'js') {
+    js++;
+  } else if (points === 'cs') {
+    cs++;
+  } else if (points === 'ruby') {
+    ruby++;
+  }
+}
 
 //ui logic
 $(document).ready(function() {
