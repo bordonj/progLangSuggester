@@ -81,7 +81,7 @@ button {
 }
 
 #results p {
-  color:thistle;
+  color:white;
   text-shadow: 2px 2px black;
 }
 
@@ -101,7 +101,7 @@ h1 {
 }
 
 .userEmail {
-  color: white;
+  color: thistle;
 }
 
 .userName {
