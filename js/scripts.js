@@ -37,43 +37,43 @@ $(document).ready(function() {
     $('.firstQuestion').hide();
     $('.secondQuestion').fadeIn();
   })
-  $('#secondBack').click(function(e2) {
-    e2.preventDefault();
+  $('#secondBack').click(function(e4) {
+    e4.preventDefault();
     $('.secondQuestion').hide();
     $('.firstQuestion').fadeIn();
   })
-  $('#secondSubmit').click(function(e3) {
-    e3.preventDefault();
+  $('#secondSubmit').click(function(e5) {
+    e5.preventDefault();
     $('.secondQuestion').hide();
     $('.thirdQuestion').fadeIn();
   })
-  $('#thirdBack').click(function(e2) {
-    e2.preventDefault();
+  $('#thirdBack').click(function(e6) {
+    e6.preventDefault();
     $('.thirdQuestion').hide();
     $('.secondQuestion').fadeIn();
   })
-  $('#thirdSubmit').click(function(e3) {
-    e3.preventDefault();
+  $('#thirdSubmit').click(function(e7) {
+    e7.preventDefault();
     $('.thirdQuestion').hide();
     $('.fourthQuestion').fadeIn();
   })
-  $('#fourthBack').click(function(e2) {
-    e2.preventDefault();
+  $('#fourthBack').click(function(e8) {
+    e8.preventDefault();
     $('.fourthQuestion').hide();
     $('.thirdQuestion').fadeIn();
   })
-  $('#fourthSubmit').click(function(e3) {
-    e3.preventDefault();
+  $('#fourthSubmit').click(function(e9) {
+    e9.preventDefault();
     $('.fourthQuestion').hide();
     $('.fifthQuestion').fadeIn();
   })
-  $('#fifthBack').click(function(e4) {
-    e4.preventDefault();
+  $('#fifthBack').click(function(e10) {
+    e10.preventDefault();
     $('.fifthQuestion').hide();
     $('.fourthQuestion').fadeIn();
   })
-  $('form#survey').submit(function(e5) {
-    e5.preventDefault();
+  $('form#survey').submit(function(e11) {
+    e11.preventDefault();
     const firstScore = $('input:radio[name=first]:checked').val();
     const secondScore = $('input:radio[name=second]:checked').val();
     const thirdScore = $('input:radio[name=third]:checked').val();
