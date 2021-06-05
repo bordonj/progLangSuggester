@@ -2,6 +2,7 @@
 html, body {
   height: 100%;
   overflow: auto;
+  font-family:'Courier New', Courier, monospace;
 }
 .top {
   background-color: black;
@@ -86,11 +87,11 @@ button {
 }
 
 /* jQuery Survey*/
-#survey, .firstQuestion, .secondQuestion, .thirdQuestion {
+#survey, .firstQuestion, .secondQuestion, .thirdQuestion, #results, #js, #ruby, #cs {
   display: none;
 }
 
-#survey {
+#survey, #results {
   width: 50%;
   margin: auto;
   background-color: rgb(112, 112, 112);

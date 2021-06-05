@@ -49,7 +49,33 @@ $(document).ready(function() {
   })
   $('#thirdSubmit').click(function(e5) {
     e5.preventDefault();
-    $('#survey').hide();
-    $('.intro').fadeIn();
+    const firstScore = $('input:radio[name=first]:checked').val();
+    const secondScore = $('input:radio[name=second]:checked').val();
+    const thirdScore = $('input:radio[name=third]:checked').val();
+    tally(firstScore);
+    tally(secondScore);
+    tally(thirdScore);
+
+    if (js > cs && js > ruby) {
+      $('.thirdQuestion').hide();
+      $('#cs, #ruby, #survey').hide();
+      $('#results').show();
+      $('#js').fadeIn();
+    } else if (cs > js && cs > ruby) {
+      $('.thirdQuestion').hide();
+      $('#js, #ruby, #survey').hide();
+      $('#results').show();
+      $('#cs').fadeIn();
+    } else if (ruby > cs && ruby > js) {
+      $('.thirdQuestion').hide();
+      $('#cs, #js, #survey').hide();
+      $('#results').show();
+      $('#ruby').fadeIn();
+    }
+
+
+
+    // $('#survey').hide();
+    // $('.intro').fadeIn();
   })
 })
