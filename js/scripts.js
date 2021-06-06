@@ -3,13 +3,15 @@ let js = 0;
 let cs = 0;
 let ruby = 0;
 
-function tally(points) {
-  if (points === 'js') {
-    js++;
-  } else if (points === 'cs') {
-    cs++;
-  } else if (points === 'ruby') {
-    ruby++;
+function tallyAll(arr) {
+  for (let score of arr) {
+    if (score === 'js') {
+      js++;
+    } else if (score === 'cs') {
+      cs++;
+    } else if (score === 'ruby') {
+      ruby++;
+    }
   }
 }
 
@@ -79,11 +81,10 @@ $(document).ready(function() {
     const thirdScore = $('input:radio[name=third]:checked').val();
     const fourthScore = $('input:radio[name=fourth]:checked').val();
     const fifthScore = $('input:radio[name=fifth]:checked').val();
-    tally(firstScore);
-    tally(secondScore);
-    tally(thirdScore);
-    tally(fourthScore);
-    tally(fifthScore);
+
+    let totalScore = [firstScore, secondScore, thirdScore, fourthScore, fifthScore]
+
+    tallyAll(totalScore);
     $('.userName').text(userName);
     $('.userEmail').text(userEmail);
 
