@@ -82,7 +82,7 @@ $(document).ready(function() {
     const fourthScore = $('input:radio[name=fourth]:checked').val();
     const fifthScore = $('input:radio[name=fifth]:checked').val();
 
-    let totalScore = [firstScore, secondScore, thirdScore, fourthScore, fifthScore]
+    let totalScore = [firstScore, secondScore, thirdScore, fourthScore, fifthScore];
 
     tallyAll(totalScore);
     $('.userName').text(userName);
